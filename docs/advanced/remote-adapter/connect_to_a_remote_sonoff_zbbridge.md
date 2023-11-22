@@ -1,4 +1,4 @@
-# Connect to a remfote Sonoff ZBBridge
+# Connect to a remote Sonoff ZBBridge
 
 This how-to explains how to run Zigbee2MQTT with a comercial Sonoff ZBBridge Gateway.
 We will use a Sonoff ZBBridge Gateway with custom firmware to connect to a serial port over TCP.
@@ -27,5 +27,9 @@ serial:
     port: 'tcp://192.168.2.13:20108'
     adapter: ezsp
 ```
+
+::: warning
+For the Sonoff ZigbeeBridge Pro, the line adapter:ezsp should be removed.
+:::
 
 Done! Now you can start Zigbee2MQTT.
